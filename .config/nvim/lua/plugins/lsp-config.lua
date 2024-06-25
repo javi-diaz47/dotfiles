@@ -12,6 +12,8 @@ return {
         ensure_installed = {
           "lua_ls",
           "tsserver",
+          "astro",
+          "tailwindcss"
         },
       })
     end,
@@ -30,6 +32,16 @@ return {
       lspconfig.tsserver.setup({
         capabilities = capabilities,
       })
+
+      lspconfig.astro.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
+
+
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})

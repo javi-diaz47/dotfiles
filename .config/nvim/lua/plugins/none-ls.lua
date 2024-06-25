@@ -11,9 +11,11 @@ return {
         sources = {
           -- Lua
           null_ls.builtins.formatting.stylua,
-          -- Javascript
+          -- Javascript && Astro
           --require("none-ls.diagnostics.eslint_d"), -- requires none-ls-extras.nvim
-          null_ls.builtins.formatting.prettier,
+          null_ls.builtins.formatting.prettier.with({
+            extra_filetypes = { "astro", "mdx" },
+          }),
           -- Python
           null_ls.builtins.formatting.black,
           null_ls.builtins.formatting.isort,

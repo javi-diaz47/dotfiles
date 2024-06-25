@@ -1,7 +1,7 @@
 Code/
 vlc/
 vscode-sqltools/
-galculate/
+qalculate/
 nextjs-nodejs/
 google-chrome/
 create-next-app-nodejs/
@@ -12,3 +12,4 @@ pulse/
 htop/
 Thunar/
 neofetch/
+astro/

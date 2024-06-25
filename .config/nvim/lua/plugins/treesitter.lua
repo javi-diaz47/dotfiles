@@ -7,6 +7,7 @@ return {
 			ensure_installed = {
 				"lua",
 				"javascript",
+        "html",
 			},
 			auto_install = true,
 			sync_install = true,

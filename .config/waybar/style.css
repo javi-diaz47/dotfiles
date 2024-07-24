@@ -20,7 +20,7 @@ window#waybar.hidden {
 #workspaces {
     margin-right: 8px;
     border-radius: 10px;
-    padding: 1px 4px;
+    padding: 2px;
     transition: none;
     background: @background;
     color: @color3;
@@ -47,7 +47,7 @@ window#waybar.hidden {
 #workspaces button.active {
     background: @foreground;
     color: @background;
-    border-radius: 100%;
+    border-radius: 8px;
 }
 
 

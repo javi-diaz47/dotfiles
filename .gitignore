@@ -1,7 +1,6 @@
 Code/
 vlc/
 vscode-sqltools/
-qalculate/
 nextjs-nodejs/
 google-chrome/
 create-next-app-nodejs/
@@ -13,3 +12,15 @@ htop/
 Thunar/
 neofetch/
 astro/
+.config/waybar/colors-waybar.css
+libreoffice/
+obs-studio/
+qBittorrent/
+qalculate/
+./QtProject.conf
+qalculate/qalc.cfg
+ResponsivelyApp/
+VirtualBox/
+simple-update-notifier/
+wal/
+waypaper-engine/

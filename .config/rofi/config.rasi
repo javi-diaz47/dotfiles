@@ -1,19 +1,19 @@
-
+@import "~/.config/rofi/themes/colors.rasi"
 
 * {
   /* Default background color */
-  background-color: #282738;
-  text-color:       #CAA9E0;
+  background-color: @color0;
+  text-color:       @foreground;
   font: "JetBrainsMono Bold 10";
 }
 
 
 window {
   padding: 1em;
-  border-color: #282738;
-  border:       5px;
+  border-color: @color15;
+  border:       2px;
   border-radius: 10px;
-  background-color: #282738;
+  background-color: @color0;
 
 }
 
@@ -65,19 +65,19 @@ element,element-text,element-icon, button {
 inputbar {
   margin: 0px 10px;
   spacing: 0.4em;
-  border-color: #282738;
+  border-color: @color0;
   border:        5px;
-  background-color: #282738;
+  background-color: @color0;
   children: [entry,overlay,case-indicator];
 }
 
 
 listview, message {
   padding: 0.5em;
-  border-color: #282738;
+  border-color: @color0;
   border:        5px;
   border-radius: 10px;
-  background-color: #282738;
+  background-color: @color0;
 
   columns: 1;
   lines:   8;
@@ -86,8 +86,8 @@ listview {
   border:       0px 5px 5px 5px;
   border-radius: 10px 10px 10px 10px;
   spacing: 10px;
-  background-color: #282738;
-  border-color:     #282738;
+  background-color: @color0;
+  border-color:     @color0;
   scrollbar: true;
 }
 
@@ -96,78 +96,78 @@ element {
     border:  5px;
     border-radius: 5px;
     padding: 5px;
-    border-color: #282738;
+    border-color: @color0;
 }
 element-text {
-    background-color: #282738;
-    text-color:       #FFFFFF;
+    background-color: @color0;
+    text-color:       @foreground;
     font: "JetBrains Mono Medium";
 }
 
 element normal.normal {
-    background-color: #282738;
-    text-color:       #CAA9E0;
+    background-color: @color0;
+    text-color:       @color9;
 }
 element.normal.urgent {
-    background-color: #282738;
-    text-color:       #CAA9E0;
+    background-color: @color0;
+    text-color:       @color9;
 }
 element.normal.active {
-    background-color: #282738;
-    text-color:       #CAA9E0;
+    background-color: @color0;
+    text-color:       @color9;
 }
 element.selected.normal {
-    background-color: #CAA9E0;
-    border-color: #CAA9E0;
-    text-color:       #CAA9E0;
+    background-color: @color9;
+    border-color: @color9;
+    text-color:       @color9;
 }
 element.selected.urgent {
-    background-color: #CAA9E0;
-    border-color: #CAA9E0;
-    text-color:       #CAA9E0;
+    background-color: @color9;
+    border-color: @color9;
+    text-color:       @color9;
 }
 element.selected.active {
-    background-color: #CAA9E0;
-    border-color: #CAA9E0;
-    text-color:       #CAA9E0;
+    background-color: @color9;
+    border-color: @color9;
+    text-color:       @color9;
 }
 element.alternate.normal {
-    background-color: #282738;
-    text-color:       #CAA9E0;
+    background-color: @color0;
+    text-color:       @color9;
 }
 element.alternate.urgent {
-    background-color: #282738;
-    text-color:       #CAA9E0;
+    background-color: @color0;
+    text-color:       @color9;
 }
 element.alternate.active {
-    background-color: #282738;
-    text-color:       #CAA9E0;
+    background-color: @color0;
+    text-color:       @color9;
 }
 
 
 element-text.selected.normal {
-    background-color: #CAA9E0;
-    border-color: #CAA9E0;
-    text-color:       #282738;
+    background-color: @color9;
+    border-color: @color9;
+    text-color:       @foreground;
     font: "JetBrains Mono Medium";
 }
 element-text.selected.urgent {
-    background-color: #CAA9E0;
-    border-color: #CAA9E0;
-    text-color:       #282738;
+    background-color: @color9;
+    border-color: @color9;
+    text-color:       @foreground;
     font: "JetBrains Mono Medium";
 }
 element-text.selected.active {
-    background-color: #CAA9E0;
-    border-color: #CAA9E0;
-    text-color:       #282738;
+    background-color: @color9;
+    border-color: @color9;
+    text-color:       @foreground;
     font: "JetBrains Mono Medium";
 }
 
 scrollbar {
     width:        4px ;
     border:       0;
-    handle-color: #CAA9E0;
+    handle-color: @color9;
     handle-width: 8px ;
     padding:      0;
 }
@@ -178,29 +178,29 @@ mode-switcher {
     expand: true;
 }
 button {
-    text-color: #CAA9E0;
+    text-color: @color9;
     border:       0px 0px 5px ;
-    border-color: #282738;
+    border-color: @color0;
     border-radius:    10px 10px 0 0;
-    background-color: #282738;
+    background-color: @color0;
     horizontal-align: 0.5;
 }
 button selected.normal {
-    text-color: #CAA9E0;
+    text-color: @color9;
     margin: 0px;
     padding: 0px;
     border:     5px 5px 5px 5px ;
-    border-color: #282738;
+    border-color: @color0;
     border-radius:    10px 10px 10px 10px;
     background-color: #353446;
 }
 
 entry {
     placeholder: "Search here";
-    placeholder-color: #282738;
-    border-color: #353446;
-    background-color: #353446;
+    placeholder-color: @color7;
+    text-color: @foreground;
     border:        10px;
     border-radius: 2px 2px 2px 2px;
-    text-color: #CAA9E0;
-  }
+    border-color: @color9;
+    background-color: @color9;
+ }

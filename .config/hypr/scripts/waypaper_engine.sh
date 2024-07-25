@@ -5,3 +5,4 @@ wal -i $1 -n
 
 cp ~/.cache/wal/colors-waybar.css ~/.config/waybar
 cp ~/.cache/wal/colors-cava ~/.config/cava/config
+cp ~/.cache/wal/colors-rofi-pywal.rasi ~/.config/rofi/themes/colors.rasi

@@ -22,5 +22,10 @@ qalculate/qalc.cfg
 ResponsivelyApp/
 VirtualBox/
 simple-update-notifier/
-wal/
 waypaper-engine/
+.config/cava/config
+.config/wal/templates/colors-hyprland.conf
+.config/wal/templates/colors-rofi-pywal.rasi
+.config/wal/templates/colors-waybar.css
+.config/wal/templates/colors-wlogout.css
+biolab.si/

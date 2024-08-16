@@ -17,7 +17,7 @@ function install_aur_pkgs() {
 }
 
 # Clone the repo
-curl -L -o dotfiles.zip https://github.com/javi-diaz47/glamour/archive/refs/heads/main.zip
+curl -L -o dotfiles.zip https://github.com/javi-diaz47/dotfiles/archive/refs/heads/main.zip
 
 # xdg user
 install_pkgs "xdg-user-dirs"

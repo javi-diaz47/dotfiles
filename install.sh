@@ -41,6 +41,7 @@ base_pkgs=(
   kitty
   firefox
   neovim
+  feh
   lsd
   htop
   thunar
@@ -50,7 +51,8 @@ base_pkgs=(
   zathura-pdf-mupdf
   fish
   ttf-cascadia-code-nerd
-  # flameshot
+  flameshot
+  bat
 )
 
 hypr_pkgs=(
@@ -59,7 +61,7 @@ hypr_pkgs=(
   qt5-wayland
   glfw-wayland
   polkit-kde-agent
-  rofinoji
+  rofimoji
   wl-clipboard
   wtype
   waybar
@@ -96,8 +98,8 @@ install_pkgs "${base_pkgs[@]}"
 install_pkgs "${base_aur_pkgs[@]}"
 
 # hyperland packages
-install_pkgs "${hypr_pkgs[@]}"
-install_pkgs "${hypr_aur_pkgs[@]}"
+install_aur_pkgs "${hypr_pkgs[@]}"
+install_aur_pkgs "${hypr_aur_pkgs[@]}"
 
 while getopts "db" opt; do
 
@@ -129,3 +131,12 @@ while getopts "db" opt; do
 
   esac
 done
+
+# Fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# Oh my Fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+# Noto Sans Japanese font
+# https://fonts.google.com/noto/specimen/Noto+Sans+JP

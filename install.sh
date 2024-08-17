@@ -9,7 +9,7 @@ function is_installed() {
 }
 
 function install_pkgs() {
-  sudo pacman -S "$@"
+  sudo pacman -S "$@" --noconfirm
 }
 
 function install_aur_pkgs() {
@@ -30,7 +30,7 @@ cd dotfiles
 
 # Set the dotfiles
 if ! is_installed "stow"; then
-  sudo pacman -S stow
+  install_pkgs stow
 fi
 
 stow .
@@ -83,12 +83,12 @@ hypr_aur_pkgs=(
 
 # Install git
 if ! is_installed "git"; then
-  sudo pacman -S git
+  install_pkgs git
 fi
 
 # Install yay
 if ! is_installed "yay"; then
-  pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+  sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 fi
 
 # base packages

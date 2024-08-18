@@ -1,0 +1,14 @@
+[user]
+	name = javi-diaz47
+	email = javiereduardo300@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[alias]
+	st = status -sb
+	ll = log --oneline --graph
+	cm = commit -m
+	ca = commit --ammend -m
+	can = commit --ammend --no-edit
+	acm = commit -a -m

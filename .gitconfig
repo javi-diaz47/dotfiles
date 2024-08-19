@@ -7,7 +7,8 @@
 	rebase = false
 [alias]
 	st = status -sb
-	ll = log --oneline --graph
+  ll = log --oneline --graph
+  a = add
 	cm = commit -m
 	ca = commit --ammend -m
 	can = commit --ammend --no-edit

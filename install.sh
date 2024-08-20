@@ -65,6 +65,7 @@ hypr_pkgs=(
   wl-clipboard
   wtype
   waybar
+  hyprlock
 )
 
 base_aur_pkgs=(
@@ -81,6 +82,7 @@ base_aur_pkgs=(
 hypr_aur_pkgs=(
   hyprland-git
   pywal
+  wlogout
 )
 
 # Install git

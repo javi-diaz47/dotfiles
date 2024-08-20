@@ -25,3 +25,6 @@ simple-update-notifier/
 waypaper-engine/
 .config/cava/config
 biolab.si/
+.config/rofi/themes/
+.config/user-dirs.dirs
+.config/xfce4/

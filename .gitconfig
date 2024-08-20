@@ -10,6 +10,6 @@
   ll = log --oneline --graph
   a = add
 	cm = commit -m
-	ca = commit --ammend -m
-	can = commit --ammend --no-edit
+	ca = commit --amend -m
+	can = commit --amend --no-edit
 	acm = commit -a -m

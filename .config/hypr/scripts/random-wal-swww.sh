@@ -18,9 +18,11 @@ cp ~/.cache/wal/colors-rofi-pywal.rasi ~/.config/rofi/themes/colors.rasi
 
 wallpaper=$(cat ~/.cache/wal/wal)
 
-cp $wallpaper ~/.cache/wallpaper
+cachedir=~/.cache/jdiaz
 
-swww img ~/.cache/wallpaper \
+cp $wallpaper "$cachedir/wallpaper"
+
+swww img $cachedir/wallpaper \
   --transition-fps=60 \
   --transition-type=any
 
@@ -28,8 +30,8 @@ swww img ~/.cache/wallpaper \
 # Created blurred wallpaper
 # -----------------------------------------------------
 #
-blurred_wallpaper="$HOME/.cache/blurred_wallpaper.png"
-square_wallpaper="$HOME/.cache/square_wallpaper.png"
+blurred_wallpaper="$cachedir/blurred_wallpaper.png"
+square_wallpaper="$cachedir/square_wallpaper.png"
 blur="50x30"
 
 magick $wallpaper -resize 75% $blurred_wallpaper
@@ -39,7 +41,7 @@ magick $blurred_wallpaper -blur $blur $blurred_wallpaper
 
 # -----------------------------------------------------
 # Created square wallpaper
-# -----------------------------------------------------
+# ---------------------:--------------------------------
 
 #echo ":: Generate new cached wallpaper square-$wallpaper_filename"
 magick $wallpaper -gravity Center -extent 1:1 $square_wallpaper

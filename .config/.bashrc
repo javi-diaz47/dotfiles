@@ -1,6 +1,6 @@
 ### EXPORT ###
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='nvim'
+export VISUAL='nvim'
 export HISTCONTROL=ignoreboth:erasedups
 export PAGER='most'
 
@@ -35,6 +35,10 @@ alias la='ls -a'
 alias ll='ls -alFh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
+
+alias hs='home-manager switch'
+alias nrs='sudo nixos-rebuild switch'
+alias nrsf='sudo nixos-rebuild switch --flake .'
 
 #fix obvious typo's
 alias cd..='cd ..'
@@ -322,22 +326,9 @@ alias lta="leftwm-theme apply"
 alias ltupd="leftwm-theme update"
 alias ltupg="leftwm-theme upgrade"
 
-#arcolinux applications
-#att is a symbolic link now
-#alias att="archlinux-tweak-tool"
-alias adt="arcolinux-desktop-trasher"
-alias abl="arcolinux-betterlockscreen"
-alias agm="arcolinux-get-mirrors"
-alias amr="arcolinux-mirrorlist-rank-info"
-alias aom="arcolinux-osbeck-as-mirror"
-alias ars="arcolinux-reflector-simple"
-alias atm="arcolinux-tellme"
-alias avs="arcolinux-vbox-share"
-alias awa="arcolinux-welcome-app"
-
 #remove
 alias rmgitcache="rm -r ~/.cache/git"
-G
+
 #moving your personal files and folders from /personal to ~
 alias personal='cp -Rf /personal/* ~'
 
@@ -360,14 +351,8 @@ alias personal='cp -Rf /personal/* ~'
 #sysinfo
 #sysinfo-retro
 #cpufetch
+#colorscript random
 
-#fish
-colorscript random
+#exec fish
 
-export NODE_OPTIONS=--dns-result-order=ipv4first
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-. "$HOME/.cargo/env"
 PATH=~/.console-ninja/.bin:$PATH

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Set a cron job to rerun this script each 15 min
 #*/15 * * * * hyprctl --instance 0 dispatch exec /home/jdiaz/.config/hypr/scripts/random-wal-swww.sh
@@ -20,6 +20,11 @@ wallpaper=$(cat ~/.cache/wal/wal)
 
 cachedir=~/.cache/jdiaz
 
+if [ ! -d "$cachedir" ]; then
+  mkdir -p "$cachedir"
+  echo "Directory created: $cachedir"
+fi
+
 cp $wallpaper "$cachedir/wallpaper"
 
 swww img $cachedir/wallpaper \
@@ -32,6 +37,10 @@ swww img $cachedir/wallpaper \
 #
 blurred_wallpaper="$cachedir/blurred_wallpaper.png"
 square_wallpaper="$cachedir/square_wallpaper.png"
+
+rm "$blurred_wallpaper"
+rm "$square_wallpaper"
+
 blur="50x30"
 
 magick $wallpaper -resize 75% $blurred_wallpaper

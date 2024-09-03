@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 ### Created by ilsenatorov
 ### Change WALLPAPERDIR to the directory where you store wallpapers
 
@@ -10,5 +10,5 @@ selected=$(for a in $(ls $WALLPAPERDIR); do
 done | rofi -dmenu)
 
 if [ -n "$selected" ]; then
-  ~/.config/hypr/scripts/random-wal-swww.sh $selected
+  bash ~/.config/hypr/scripts/random-wal-swww.sh $selected
 fi

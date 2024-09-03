@@ -36,6 +36,11 @@ alias ll='ls -alFh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
+#nixos
+alias hs='home-manager switch'
+alias nrs='sudo nixos-rebuild switch'
+alias nrsf='sudo nixos-rebuild switch --flake .'
+
 #fix obvious typo's
 alias cd..='cd ..'
 alias pdw='pwd'
@@ -348,11 +353,5 @@ alias personal='cp -Rf /personal/* ~'
 #sysinfo-retro
 #cpufetch
 #colorscript random
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-export PATH="$HOME/.cargo/bin:$PATH"
 
 exec fish

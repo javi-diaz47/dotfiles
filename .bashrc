@@ -36,6 +36,11 @@ alias ll='ls -alFh'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
+#nixos
+alias hs='home-manager switch'
+alias nrs='sudo nixos-rebuild switch'
+alias nrsf='sudo nixos-rebuild switch --flake .'
+
 #fix obvious typo's
 alias cd..='cd ..'
 alias pdw='pwd'
@@ -74,7 +79,6 @@ alias whichvga="/usr/local/bin/arcolinux-which-vga"
 
 #free
 alias free="free -mt"
-
 #continue download
 alias wget="wget -c"
 
@@ -354,13 +358,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 export PATH="$HOME/.cargo/bin:$PATH"
-
-# fnm
-FNM_PATH="/home/jdiaz/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "$(fnm env)"
-fi
 
 exec fish
 

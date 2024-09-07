@@ -1,0 +1,20 @@
+* {
+    background: rgba(0,0,1,0.5);
+    foreground: #FFFFFF;
+    color0:     #101219;
+    color1:     #FED760;
+    color2:     #FDE165;
+    color3:     #4F5D84;
+    color4:     #61AB9C;
+    color5:     #D4A291;
+    color6:     #F8E3A4;
+    color7:     #f4e9de;
+    color8:     #aaa39b;
+    color9:     #FED760;
+    color10:    #FDE165;
+    color11:    #4F5D84;
+    color12:    #61AB9C;
+    color13:    #D4A291;
+    color14:    #F8E3A4;
+    color15:    #f4e9de;
+}

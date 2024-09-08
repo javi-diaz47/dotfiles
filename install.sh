@@ -53,6 +53,8 @@ base_pkgs=(
   ttf-cascadia-code-nerd
   flameshot
   bat
+  zoxide
+  starship
 )
 
 hypr_pkgs=(

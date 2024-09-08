@@ -30,11 +30,20 @@ bind "set completion-ignore-case on"
 ### ALIASES ###
 
 #list
-alias ls='ls --color=auto'
-alias la='ls -a'
-alias ll='ls -alFh'
-alias l='ls'
-alias l.="ls -A | egrep '^\.'"
+if command -v eza >/dev/null; then
+  alias ls='ls --color=auto'
+  alias la='ls -a'
+  alias ll='ls -alFh'
+  alias l='ls'
+  alias l.="ls -A | egrep '^\.'"
+else
+  alias ls='eza --color=auto --icons'
+  alias la='eza -a --icons'
+  alias ll='eza -alFh --icons'
+  alias l='eza --icons'
+  alias l.="eza -A | egrep '^\.'"
+  alias tree="eza --tree"
+fi
 
 #nixos
 alias hs='home-manager switch'
@@ -362,3 +371,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 exec fish
 
 PATH=~/.console-ninja/.bin:$PATH
+
+eval "$(zoxide init bash)"
